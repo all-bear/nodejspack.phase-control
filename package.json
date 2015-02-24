@@ -7,5 +7,6 @@
   },
   "scripts": {
     "test": "jasmine-node ./test/ --autotest --watch ./"
-  }
+  },
+  "main": "lib/bootable"
 }

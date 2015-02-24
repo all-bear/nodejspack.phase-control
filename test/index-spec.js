@@ -1,4 +1,4 @@
-var bootable = require('../index');
+var bootable = require('../lib/bootable');
 
 function checkFunctionRun() {
     return global.testFunctionMessage.shift() == 'function_run';
