@@ -1,0 +1,11 @@
+{
+  "name": "bootable",
+  "version": "0.1.0",
+  "dependencies": {
+    "callsite": "^1.0.0",
+    "jasmine-node": "^1.14.5"
+  },
+  "scripts": {
+    "test": "jasmine-node ./test/ --autotest --watch ./"
+  }
+}
