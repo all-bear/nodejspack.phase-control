@@ -2,7 +2,9 @@
   "name": "bootable",
   "version": "0.1.0",
   "dependencies": {
-    "callsite": "^1.0.0"
+    "callsite": "^1.0.0",
+    "deasync": "0.0.10",
+    "node.extend": "^1.1.3"
   },
   "devDependencies": {
     "jasmine-node": "^1.14.5"

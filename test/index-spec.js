@@ -20,7 +20,6 @@ function refreshFunctionRun() {
 
 describe('bootable', function () {
     var targetObj = bootable({});
-    ;
 
     beforeEach(function () {
         targetObj = bootable({});
@@ -87,4 +86,15 @@ describe('bootable', function () {
             }).toThrow('Wrong path');
         });
     });
+
+    describe('bootable with async function', function () {
+        it('function must run', function () {
+            targetObj.phase('phase', './test_requireds_async/01_required_1000ms');
+            expect(checkFunctionRun()).toBe(true);
+        });
+        expect(function () {
+            targetObj.phase('phase', './test_requireds_async/02_required_9000ms');
+        }).toThrow('Function run time ends');
+    });
+
 });
