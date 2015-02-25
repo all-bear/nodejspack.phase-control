@@ -2,7 +2,9 @@
   "name": "bootable",
   "version": "0.1.0",
   "dependencies": {
-    "callsite": "^1.0.0",
+    "callsite": "^1.0.0"
+  },
+  "devDependencies": {
     "jasmine-node": "^1.14.5"
   },
   "scripts": {
