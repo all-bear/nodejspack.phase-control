@@ -1,5 +1,5 @@
 {
-  "name": "bootable",
+  "name": "phaser",
   "version": "0.1.0",
   "dependencies": {
     "callsite": "^1.0.0",

@@ -1,4 +1,4 @@
-var bootable = require('../lib/bootable');
+var phaser = require('../lib/phaser');
 
 function checkFunctionRun() {
     return global.testFunctionMessage.shift() == 'function_run';
@@ -18,15 +18,15 @@ function refreshFunctionRun() {
     global.testFunctionFile = [];
 }
 
-describe('bootable', function () {
-    var targetObj = bootable({});
+describe('phaser', function () {
+    var targetObj = phaser({});
 
     beforeEach(function () {
-        targetObj = bootable({});
+        targetObj = phaser({});
         refreshFunctionRun();
     });
 
-    describe('bootable with function', function () {
+    describe('phaser with function', function () {
         var testFunc = require('./test_requireds/01_required');
 
         it('function must run', function () {
@@ -39,7 +39,7 @@ describe('bootable', function () {
             expect(checkFunctionThis(targetObj)).toBe(true);
         });
     });
-    describe('bootable with path to file', function () {
+    describe('phaser with path to file', function () {
         it('function must run', function () {
             targetObj.phase('phase', './test_requireds/01_required');
             expect(checkFunctionRun()).toBe(true);
@@ -61,7 +61,7 @@ describe('bootable', function () {
             }).toThrow('Wrong path');
         });
     });
-    describe('bootable with path to directory', function () {
+    describe('phaser with path to directory', function () {
         it('function must run', function () {
             targetObj.phase('phase', './test_requireds');
             expect(checkFunctionRun()).toBe(true);
@@ -87,7 +87,7 @@ describe('bootable', function () {
         });
     });
 
-    describe('bootable with async function', function () {
+    describe('phaser with async function', function () {
         it('function must run', function () {
             targetObj.phase('phase', './test_requireds_async/01_required_1000ms');
             expect(checkFunctionRun()).toBe(true);
