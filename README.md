@@ -18,7 +18,7 @@ Create a new application and mixin the phase-control module.
 
 ```javascript
 var express = require('express')
-  , phase-control = require('bootable');
+  , phase-control = require('phase-control');
 
 var app = phase-control(express());
 ```
