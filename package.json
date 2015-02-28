@@ -1,5 +1,5 @@
 {
-  "name": "phaser",
+  "name": "phase-control",
   "version": "0.1.0",
   "dependencies": {
     "callsite": "^1.0.0",

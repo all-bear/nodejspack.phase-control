@@ -1,4 +1,4 @@
-var phaser = require('../lib/phaser');
+var phaser = require('../lib/phase-control');
 
 function checkFunctionRun() {
     return global.testFunctionMessage.shift() == 'function_run';
