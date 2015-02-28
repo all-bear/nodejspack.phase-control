@@ -18,9 +18,9 @@ Create a new application and mixin the phase-control module.
 
 ```javascript
 var express = require('express')
-  , phase-control = require('phase-control');
+  , phaseControl = require('phase-control');
 
-var app = phase-control(express());
+var app = phaseControl(express());
 ```
 
 Once mixed-in, the application will have function `app.phase(phaseName, path to file or path to directory or function)`.

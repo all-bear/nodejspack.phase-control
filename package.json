@@ -1,6 +1,6 @@
 {
   "name": "phase-control",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "dependencies": {
     "callsite": "^1.0.0",
     "deasync": "0.0.10",
@@ -12,5 +12,5 @@
   "scripts": {
     "test": "jasmine-node ./test/ --autotest --watch ./"
   },
-  "main": "lib/bootable"
+  "main": "lib/phase-control"
 }
