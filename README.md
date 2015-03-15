@@ -20,8 +20,16 @@ Create a new application and mixin the phase-control module.
 var express = require('express')
   , phaseControl = require('phase-control');
 
-var app = phaseControl(express());
+var options = {
+    waitingTime: 5000,
+    logEnable: false
+}
+var app = phaseControl(express(), options); //or var app = phaseControl(express()), in this way default options will be used.
 ```
+Default options:
+* waitingTime: 3000 - time in ms for asynchronous function execution.
+* logEnable: true.
+
 
 Once mixed-in, the application will have function `app.phase(phaseName, path to file or path to directory or function)`.
 
