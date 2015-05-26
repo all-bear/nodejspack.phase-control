@@ -1,6 +1,6 @@
 {
   "name": "phase-control",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "dependencies": {
     "callsite": "^1.0.0",
     "deasync": "0.0.10",
@@ -8,6 +8,16 @@
   },
   "devDependencies": {
     "jasmine-node": "^1.14.5"
+  },
+  "keywords": [
+    "init",
+    "boot",
+    "express",
+    "startup"
+  ],
+  "author": {
+    "name": "Oleh Birjukov",
+    "email": "ol.birjukov@gmail.com"
   },
   "scripts": {
     "test": "jasmine-node ./test/ --autotest --watch ./"
